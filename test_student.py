@@ -5,6 +5,7 @@ from student import Student
 class TestStudent(unittest.TestCase):
 
     def setUp(self):
+        print('setUp')
         self.student = Student('John', 'Doe')
 
     def tearDown(self):
@@ -16,8 +17,7 @@ class TestStudent(unittest.TestCase):
 
     def test_alert_santa(self):
         print('test_alert_santa')
-        student.alert_santa()
-
+        self.student.alert_santa()
         self.assertTrue(self.student.naughty_list)
 
     def test_email(self):
