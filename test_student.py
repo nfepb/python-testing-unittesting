@@ -8,6 +8,10 @@ class TestStudent(unittest.TestCase):
     def setUpClass(cls):
         print('setUpClass')
 
+    @classmethod
+    def tearDownClass(cls):
+        print('tearDownClass')
+
     def setUp(self):
         print('setUp')
         self.student = Student('John', 'Doe')
