@@ -4,6 +4,10 @@ from student import Student
 
 class TestStudent(unittest.TestCase):
 
+    @classmethod
+    def setUpClass(cls):
+        print('setUpClass')
+
     def setUp(self):
         print('setUp')
         self.student = Student('John', 'Doe')
