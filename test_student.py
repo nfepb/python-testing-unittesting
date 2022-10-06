@@ -5,6 +5,13 @@ from unittest.mock import patch
 
 
 class TestStudent(unittest.TestCase):
+    """
+    Examples of feature extensions:
+    * Return student start date
+    * Factor in leap years when calculating a student's end date
+    * Display whether a student has been given an extension
+    * Keep track of a student's scores
+    """
 
     @classmethod
     def setUpClass(cls):
